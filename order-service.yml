@@ -80,6 +80,10 @@ resilience4j:
         max-attempts: 3
 
         wait-duration: 2s
+        
+        enable-exponential-backoff: true
+        
+        exponential-backoff-multiplier: 2
 
   timelimiter:
 
