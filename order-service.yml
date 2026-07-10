@@ -82,7 +82,7 @@ resilience4j:
         wait-duration: 2s
         
         enable-exponential-backoff: true
-        
+
         exponential-backoff-multiplier: 2
 
   timelimiter:
@@ -99,9 +99,9 @@ resilience4j:
 
       productService:
 
-        max-concurrent-calls: 5
+        max-concurrent-calls: 2
 
-        max-wait-duration: 1s
+        max-wait-duration: 5s
 
   ratelimiter:
 
