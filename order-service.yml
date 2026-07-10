@@ -101,7 +101,7 @@ resilience4j:
 
         max-concurrent-calls: 2
 
-        max-wait-duration: 5s
+        max-wait-duration: 2s
 
   ratelimiter:
 
