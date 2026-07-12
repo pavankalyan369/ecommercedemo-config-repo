@@ -18,6 +18,28 @@ spring:
       hibernate:
         format_sql: true
 
+  kafka:
+
+    bootstrap-servers: localhost:9092
+
+    producer:
+
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    properties:
+
+      spring:
+
+        json:
+
+          add:
+
+            type:
+
+              headers: false
+
 eureka:
   client:
     service-url:
@@ -117,26 +139,4 @@ resilience4j:
         limit-for-period: 5
 
         timeout-duration: 0
-      
-
-  kafka:
-
-    bootstrap-servers: localhost:9092
-
-    producer:
-
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-
-    properties:
-
-      spring:
-
-        json:
-
-          add:
-
-            type:
-
-              headers: false        
+           
