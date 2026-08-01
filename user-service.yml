@@ -36,5 +36,4 @@ management:
       exposure:
         include: "*"
 
-logging:
-  service-path: user-service    
+ 

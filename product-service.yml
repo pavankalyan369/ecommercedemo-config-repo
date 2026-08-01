@@ -58,6 +58,4 @@ management:
     web:
       exposure:
         include: "*"
-
-logging:
-  service-path: product-service            
+          

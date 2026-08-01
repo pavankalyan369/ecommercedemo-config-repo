@@ -131,7 +131,5 @@ resilience4j:
         limit-for-period: 5
 
         timeout-duration: 0
-
-logging:
-  service-path: order-service      
+ 
            
